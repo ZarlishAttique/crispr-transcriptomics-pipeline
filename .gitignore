@@ -1,0 +1,25 @@
+.venv
+.env
+*.zip
+*.csv
+__pycache__
+Output/
+*.log
+# Exclude a .csv file called "CellLines_Master_AllModels.csv"
+!CellLines_Master_AllModels.csv
+!HGNC_GenesSymbols.csv
+!Metadata.csv
+
+
+GSE92742_Broad_LINCS_sig_info.txt
+GSE92742_Broad_LINCS_pert_info.txt
+GSE92742_Broad_LINCS_cell_info.txt
+GSE92742_Broad_LINCS_gene_info.txt
+GSE92742_Broad_LINCS_Level5_COMPZ.MODZ_n473647x12328.gctx
+
+
+L1000_Output/
+*Output_Perturbation_Pipeline*/
+Integration_Output/
+*help.py
+outputs*/*
