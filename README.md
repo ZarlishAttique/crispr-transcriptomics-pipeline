@@ -32,50 +32,6 @@ The pipeline requires three sets of data files: DepMap data, L1000 data, and Int
    mkdir -p perturbation/dep_map/data
    ```
 
-2. **Download DepMap data files from Google Drive:**
-   - Navigate to: https://drive.google.com/drive/folders/1Ud_p6mswJQGuLnqNX-kzTaP9_coqhXAR
-   - Download all CSV files from the folder
-   - Place them directly in `perturbation/dep_map/data/`
-
-3. **Required DepMap files:**
-   The following files must be present in `perturbation/dep_map/data/`:
-   - `Model.csv`
-   - `Gene.csv`
-   - `CRISPRGeneEffect.csv`
-   - `CRISPRGeneDependency.csv`
-   - `OmicsExpressionTPMLogp1HumanProteinCodingGenes.csv`
-   - `OmicsCNGeneWGS.csv`
-   - `ModelCondition.csv`
-   - `CRISPRScreenMap.csv`
-   - `ScreenSequenceMap.csv`
-   - `AvanaGuideMap.csv`
-   - `AvanaLogfoldChange.csv`
-   - `CellLines_Master_AllModels.csv`
-   - Additional DepMap data files as needed
-
-#### 3.2 L1000 Data Setup
-
-1. **Ensure the L1000 data directory exists:**
-   ```bash
-   mkdir -p perturbation/l1000/data
-   ```
-
-2. **Download L1000 data files from Google Drive:**
-   - Navigate to: https://drive.google.com/drive/folders/173ItTYxSH6GjVNRNJwy8fvQz3iRJ0RZR
-   - Download all files from the folder
-   - Place them directly in `perturbation/l1000/data/`
-
-3. **Required L1000 files:**
-   The following files must be present in `perturbation/l1000/data/`:
-   - `Metadata.csv` (may already exist)
-   - `GSE92742_Broad_LINCS_sig_info.txt`
-   - `GSE92742_Broad_LINCS_pert_info.txt`
-   - `GSE92742_Broad_LINCS_cell_info.txt`
-   - `GSE92742_Broad_LINCS_gene_info.txt`
-   - `GSE92742_Broad_LINCS_Level5_COMPZ.MODZ_n473647x12328.gctx` (large file, ~2GB)
-
-   **Note:** The `.gctx` file is a large binary file (Gene Expression Context) containing the actual expression data. Make sure to download it completely.
-
 #### 3.3 Integration Data Setup
 
 1. **Ensure the Integration data directory exists:**
